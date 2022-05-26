@@ -2,6 +2,7 @@
   font-family: RadioCanada;
   src: url("/fonts/RadioCanada-Regular.ttf");
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -36,10 +37,12 @@ body {
 
 .displayInfo-s {
   width: 90%;
-  height: 20vh;
-  border: 1px solid #fff;
+  height: 18vh;
+  border: 0.5px solid #9D9D9D;
   border-radius: 5px;
-  box-shadow: .1px .1px 2px #fff;
+  box-shadow: .1px .1px 5px #9D9D9D inset,
+    .1px .1px 5px #9D9D9D;
+  background: #212228;
 }
 
 .inpFields {
@@ -49,29 +52,50 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  position: relative;
 }
-.inpOne,.inpSec{
-  width: 90%;
+
+.inpOne,
+.inpSec {
+  width: 85%;
   height: 40px;
   text-align: right;
   font-size: 2rem;
   color: #fff;
-  background: #f00;
   border: none;
+  margin: 3px 0 0 0;
+  position: absolute;
+  background: none;
 }
+
+.inpOne {
+  right: 30px;
+  bottom: 20px;
+  transition: 0.3s;
+}
+
+.inpOneMove {
+  bottom: 60px;
+}
+
 .inpSec {
-  background: #05BCFF;
+  right: 30px;
+  bottom: 20px;
 }
+
 .inpOp {
   position: absolute;
   width: 10%;
-  height: 40px;
-  right: 20px;
-  top: 53px;
+  height: 30px;
+  right: 0px;
+  top: 50px;
   background: none;
   border: none;
-  background: #05FF4E;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
 }
+
 .resultField {
   width: 95%;
   height: 40px;
@@ -80,14 +104,17 @@ body {
   align-items: center;
   justify-content: flex-end;
   text-align: right;
-  margin-top: -10px;
+  margin-top: -20px;
   padding: 0 10px 0 0;
   color: #fff;
-  background: #f00;
+  border-top: 0.5px solid #787878;
+  overflow: scroll;
 }
+
 .zero {
-  padding: 0 10px 0 0;
+  padding: 0 3px 0 0;
 }
+
 /*.inpOneDiv {
   width: 100%;
   position: relative;
@@ -124,6 +151,20 @@ body {
   align-items: center;
 }
 
+#acBtn {
+  background: #DA5050;
+  background: radial-gradient(circle, #DA5050 10%, rgba(0, 0, 0, 1) 100%);
+}
+#delBtn {
+  background: #2D99BE;
+  background: radial-gradient(circle, #2D99BE 10%, rgba(0, 0, 0, 1) 100%);
+
+}
+#equal {
+  background: #EE6D14;
+  background: radial-gradient(circle, #EE6D14 10%, rgba(0, 0, 0, 1) 100%);
+
+}
 .buttonActions button,
 .buttonSevenToNine button,
 .buttonFourToSix button,
@@ -132,17 +173,18 @@ body {
   width: 20%;
   height: 8vh;
   font-size: 1.5em;
-   background: rgb(142,142,144);
-background: radial-gradient(circle, #23242C 30%, rgba(0,0,0,1) 100%);  
+  background: rgb(142, 142, 144);
+  background: radial-gradient(circle, #23242C 30%, rgba(0, 0, 0, 1) 100%);
   /* Created with https://www.css-gradient.com */
- /* background: #2C2C2C;
+  /* background: #2C2C2C;
   background: -webkit-radial-gradient(center, #2C2C2C, #010101);
   background: -moz-radial-gradient(center, #2C2C2C, #010101);
   background: radial-gradient(ellipse at center, #2C2C2C, #010101);
-  */color: #fff;
+  */
+  color: #fff;
   border: none;
   border-radius: 3px;
   box-shadow: .1px .1px 5px #000 inset,
-              .1px .1px 5px #000;
+    .1px .1px 5px #000;
   border-radius: 50%;
 }
