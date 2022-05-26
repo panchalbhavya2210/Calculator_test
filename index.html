@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculator App</title>
+  <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="numCalc-m">
+    <div class="displayInfo-m">
+      <div class="displayInfo-s">
+        <div class="inpFields">
+          <div class="inpOneDiv">
+            <input type="number" id="dataOne" disabled class="inpOne" placeholder="30">
+          </div>
+          <div class="inpOpDiv">
+            <input type="text" id="dataOp" disabled class="inpOp">
+          </div>
+          <div class="inpSecDiv">
+            <input type="number" id="dataSec" disabled class="inpSec" placeholder="30">
+          </div>
+        </div>
+        <div class="resultField">
+          <text id="answer" class="zero">00</text>
+        </div>
+      </div>
+    </div>
+
+    <div class="buttonsRow-m">
+      <div class="buttonsRow-s">
+        <div class="buttonActions">
+          <button class="delBtn">DEL</button>
+          <button class="acBtn">AC</button>
+          <button class="exBtn">EX</button>
+          <button class="multiply operator">×</button>
+        </div>
+        <div class="buttonSevenToNine">
+          <button class="btn btn-txt">7</button>
+          <button class="btn btn-txt">8</button>
+          <button class="btn btn-txt">9</button>
+          <button class="plus operator">+</button>
+        </div>
+        <div class="buttonFourToSix">
+          <button class="btn btn-txt">4</button>
+          <button class="btn btn-txt">5</button>
+          <button class="btn btn-txt">6</button>
+          <button class="minus operator">-</button>
+        </div>
+        <div class="buttonOneToThree">
+          <button class="btn btn-txt">1</button>
+          <button class="btn btn-txt">2</button>
+          <button class="btn btn-txt">3</button>
+          <button class="divide operator">/</button>
+        </div>
+        <div class="extraActions">
+          <button class="btn btn-txt">0</button>
+          <button class="btn btn-txt">00</button>
+          <button class="btn btn-txt">.</button>
+          <button class="equal operator">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

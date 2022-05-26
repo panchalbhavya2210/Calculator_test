@@ -1,0 +1,148 @@
+@font-face {
+  font-family: RadioCanada;
+  src: url("/fonts/RadioCanada-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: RadioCanada;
+}
+
+body {
+  background: #252629;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numCalc-m {
+  width: 85%;
+  height: 80vh;
+  box-shadow: 3px 3px 15px #000;
+  border-radius: 5px;
+  background: #111113;
+  position: relative;
+}
+
+.displayInfo-m {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+
+.displayInfo-s {
+  width: 90%;
+  height: 20vh;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  box-shadow: .1px .1px 2px #fff;
+}
+
+.inpFields {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.inpOne,.inpSec{
+  width: 90%;
+  height: 40px;
+  text-align: right;
+  font-size: 2rem;
+  color: #fff;
+  background: #f00;
+  border: none;
+}
+.inpSec {
+  background: #05BCFF;
+}
+.inpOp {
+  position: absolute;
+  width: 10%;
+  height: 40px;
+  right: 20px;
+  top: 53px;
+  background: none;
+  border: none;
+  background: #05FF4E;
+}
+.resultField {
+  width: 95%;
+  height: 40px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  margin-top: -10px;
+  padding: 0 10px 0 0;
+  color: #fff;
+  background: #f00;
+}
+.zero {
+  padding: 0 10px 0 0;
+}
+/*.inpOneDiv {
+  width: 100%;
+  position: relative;
+  right: 0;
+  background: #00E0FF;
+}
+.inpOneDiv .inpOne{
+  position: absolute;
+  right: 00%;
+}*/
+.buttonsRow-m {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonsRow-s {
+  width: 90%;
+  height: 55vh;
+}
+
+.buttonActions,
+.buttonSevenToNine,
+.buttonFourToSix,
+.buttonOneToThree,
+.extraActions {
+  width: 100%;
+  height: 10vh;
+  margin: 5px 0 5px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttonActions button,
+.buttonSevenToNine button,
+.buttonFourToSix button,
+.buttonOneToThree button,
+.extraActions button {
+  width: 20%;
+  height: 8vh;
+  font-size: 1.5em;
+   background: rgb(142,142,144);
+background: radial-gradient(circle, #23242C 30%, rgba(0,0,0,1) 100%);  
+  /* Created with https://www.css-gradient.com */
+ /* background: #2C2C2C;
+  background: -webkit-radial-gradient(center, #2C2C2C, #010101);
+  background: -moz-radial-gradient(center, #2C2C2C, #010101);
+  background: radial-gradient(ellipse at center, #2C2C2C, #010101);
+  */color: #fff;
+  border: none;
+  border-radius: 3px;
+  box-shadow: .1px .1px 5px #000 inset,
+              .1px .1px 5px #000;
+  border-radius: 50%;
+}
