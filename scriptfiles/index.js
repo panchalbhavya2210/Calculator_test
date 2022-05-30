@@ -7,6 +7,10 @@ const operators = document.querySelectorAll('.operator');
 
 for (const btn of numBtns) {
   btn.addEventListener('click', () => {
+    btn.classList.add("animate");
+    setTimeout(()=>{
+      btn.classList.remove("animate");
+    },300)
     let inpOneScoped = document.getElementById("dataOne");
     let inpSecScoped = document.getElementById("dataSec");
     let inpOpScoped = document.getElementById("dataOp");

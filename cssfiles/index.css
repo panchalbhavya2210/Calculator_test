@@ -22,7 +22,7 @@ body {
   height: 80vh;
   box-shadow: 3px 3px 15px #000;
   border-radius: 5px;
-  background: #111113;
+  background: #191919;
   position: relative;
 }
 
@@ -41,8 +41,8 @@ body {
   border: 0.5px solid #9D9D9D;
   border-radius: 5px;
   box-shadow: .1px .1px 5px #9D9D9D inset,
-    .1px .1px 5px #9D9D9D;
-  background: #212228;
+    .1px .1px 5px #000000;
+  background: #191919;
 }
 
 .inpFields {
@@ -187,4 +187,25 @@ body {
   box-shadow: .1px .1px 5px #000 inset,
     .1px .1px 5px #000;
   border-radius: 50%;
+}
+/*.buttonActions button:hover,
+.buttonSevenToNine button:hover,
+.buttonFourToSix button:hover,
+.buttonOneToThree button:hover,
+.extraActions button:hover {
+  animation: scale 0.8s linear;
+}*/
+.animate {
+ animation: scale 0.3s linear;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
